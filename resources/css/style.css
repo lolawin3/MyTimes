@@ -1,0 +1,47 @@
+.header{
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.header h1{
+  color: MediumAquamarine;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 10px;
+  color: black;
+  text-align: right;
+}
+
+.container{
+  border: 1px solid black;
+  height: 700px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.left{
+  width: 630px;
+  border: 1px solid black;
+  height: 650px;
+}
+
+.center{
+  width: 300px;
+  border: 1px solid black;
+  height: 650px;
+}
+
+.right{
+  width: 240px;
+  border: 1px solid black;
+  height: 650px;
+}
