@@ -1,56 +1,59 @@
-.header{
+body {
+  margin: auto;
+}
+
+header{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
+  color: MediumAquamarine;
+  position: fixed;
   border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 5;
 }
 
-.header h1{
-  color: MediumAquamarine;
-  font-size: 14px;
-  display: inline-flex;
+header p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav{
+  text-align: right;
 }
 
 nav li{
   display: inline-block;
-  margin: 0 10px;
+  text-align: center;
+  width: 60px;
+}
+
+nav a {
   color: black;
-  text-align: right;
 }
 
 .container{
+  position: relative;
   border: 1px solid black;
   display: flex;
-  justify-content: space-around;
+  top: 90px;
 }
 
-.left{
+.large{
   width: 630px;
   border: 1px solid black;
-  height: 650px;
+  margin: 20px;
 }
 
-.center{
+.medium{
   width: 300px;
   border: 1px solid black;
-  height: 650px;
+  margin: 20px;
 }
 
-.right{
+.small{
   width: 240px;
   border: 1px solid black;
-  height: 650px;
+  margin: 20px;
 }
-
-.first{border: 1px solid black;}
-.mother{border: 1px solid black;}
-.second{border: 1px solid black;}
-.split1{border: 1px solid black;}
-.orca{border: 1px solid black;}
-.earth{border: 1px solid black;}
-.split2{border: 1px solid black;}
-.burger{border: 1px solid black;}
-.research{border: 1px solid black;}
-.cat{border: 1px solid black;}
-.news{border: 1px solid black;}
