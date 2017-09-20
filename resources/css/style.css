@@ -15,6 +15,7 @@ header{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .logo{
   display: flex;
@@ -51,6 +52,7 @@ nav a {
   margin-left: 130px;
   position: relative;
   top: 100px;
+  flex-wrap: wrap;
 }
 
 .large, .medium, .small{
@@ -144,6 +146,7 @@ footer{
   flex-direction: column;
   position: relative;
   top: 150px;
+  flex-wrap: wrap;
 }
 .footer p{
   font-family: Georgia;
