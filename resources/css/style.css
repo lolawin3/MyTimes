@@ -19,7 +19,7 @@ header{
 .logo{
   display: flex;
   align-items: center;
-  margin: 10px 20px;
+  margin: 10px 75px;
 }
 .logo p{
   display: inline-block;
@@ -28,7 +28,7 @@ header{
 
 nav{
   justify-content: space-around;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 nav li{
@@ -43,59 +43,69 @@ nav a {
 
 /*Main Content*/
 .container{
-  position: relative;
-  border: 1px solid black;
   display: flex;
   top: 90px;
-  justify-content: center;
-}
-
-.large{
-  width: 630px;
-  border: 1px solid black;
-  margin: 20px;
-}
-
-.medium{
-  width: 300px;
-  border: 1px solid black;
-  margin: 20px;
-}
-
-#content{
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  margin-left: 130px;
+  position: relative;
+  top: 100px;
 }
 
-#mother{
+.large, .medium, .small{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 20px;
+}
+/*Large(left) section*/
+.large{
+  display: flex;
+  width: 630px;
+  flex-direction: column;
+}
+
+.caption, .main-story-heading{
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
-  background-image: url('../images/Main Story.png');
   height: 300px;
 }
-#earth{
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+
+.main-story-heading{
+  background-image: url('../images/Main Story.png');
+  font-size: 40px;
+}
+
+.earth{
   background-image: url('../images/Fall Season.png');
 }
-#research{
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+.camera{
   background-image: url('../images/Hipster Cameraman.png');
 }
-#cat{
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+.cat{
   background-image: url('../images/CAT CEO.png');
+}
+.story{
+  flex-direction: column;
+  width: 300px;
+}
+.left-stories{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+/*Medium(middle) section*/
+.medium{
+  width: 300px;
 }
 
 /*Third(small) section*/
@@ -120,7 +130,6 @@ nav a {
   color: DimGray;
 }
 
-
 /*footer*/
 footer{
   display: flex;
@@ -133,6 +142,8 @@ footer{
   align-items: center;
   width: auto;
   flex-direction: column;
+  position: relative;
+  top: 150px;
 }
 .footer p{
   font-family: Georgia;
