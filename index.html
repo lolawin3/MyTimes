@@ -9,38 +9,78 @@
   <body>
 <!-- Main header section -->
     <header>
-      <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myt-logo.jpg"/>
-      <p>My Times</p>
+      <div class="logo">
+        <img src="./resources/images/logo.jpg" alt="My Times logo spelled as M-Y-T"/>
+        <p>My Times</p>
+      </div>
       <nav>
         <ul>
-          <li>  <a href="world"> World</a>  </li>
-          <li>  <a href="us"> U.S.</a>  </li>
-          <li>  <a href="tech"> Tech</a>  </li>
-          <li>  <a href="science"> Science</a>  </li>
+          <li>  <a href="world">World</a>  </li>
+          <li>  <a href="us">U.S.</a>  </li>
+          <li>  <a href="tech">Tech</a>  </li>
+          <li>  <a href="science">Science</a>  </li>
         </ul>
       </nav>
     </header>
 <!-- Main content section of the page -->
-    <div class="container">
+    <div class="container" id="content">
+      <!-- Left(main) section of the story -->
       <div class="large">
-        <p>Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</p>
-        <p>MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.</p>
-        <h2>Orca Spends Vacation at Land World Puget</h2>
-        <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
-        <p>Earth Spins Backwards for 2017</p>
-        <h2>Burger for Breakfast: How Early is too Early?</h2>
-        <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
+        <div class="main-story">
+          <div id="main-story-heading">
+            <p>Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</p>
+          </div>
+          <p>MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.</p>
+        </div>
+        <div class="left-stories">
+          <div class="story">
+            <h2>Orca Spends Vacation at Land World Puget</h2>
+            <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
+            <div id="earth">
+              <p>Earth Spins Backwards for 2017</p>
+            </div>
+          </div>
+          <div class="story">
+            <h2>Burger for Breakfast: How Early is too Early?</h2>
+            <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
+            <div id="camera">
+              <p>Research Shows Cameras Erase Memory</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Middle section of the story -->
       <div class="medium">
         <h2>FBI Finds Action Star Guilty of False Advertising</h2>
         <p>WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p>
-        <p>Cats in Control-Is It a Thing?<p>
+        <div id="cat">
+          <p>Cats in Control-Is It a Thing?<p>
+        </div>
         <p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.</p>
       </div>
+      <!-- Right section of the story -->
       <div class="small">
-        <h2>NEWS BITES</h2>
-        <p>Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can</P>
+        <p><img src="./resources/images/Cookie.png"/></p>
+        <p id="news">NEWS BITES</p>
+        <span class="bite">Cat Emoji Goes Viral By Youtube</span>
+        <span class="bite">Views Home Business Advertising</span>
+        <span class="bite">Ideas Advertising Internet Online</span>
+        <span class="bite">Illustration in Marketing Materials</span>
+        <span class="bite">Finally a Top Secret Way You Can</span>
       </div>
     </div>
+    <!--Footer section-->
+    <footer>
+      <div class="footer">
+        <p>MY Times &emsp; <span class="footer-vertical-bar">&#124;</span> &emsp;</p>
+        <span class="menu-item"><a href="#">World</a></span>
+        <span class="menu-item"><a href="#">U.S.</a></span>
+        <span class="menu-item"><a href="#">Tech</a></span>
+        <span class="menu-item"><a href="#">Science</a></span>
+      </div>
+      <div class="copyright">
+        <p>&copy;  2016, My Times (A Division of Codecademy bite)</p>
+      </div>
+    </footer>
   </body>
 </html>

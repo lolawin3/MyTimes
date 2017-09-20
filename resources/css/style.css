@@ -1,43 +1,53 @@
 body {
   margin: auto;
 }
-
+/*Header section*/
 header{
+  display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
   color: MediumAquamarine;
   position: fixed;
   border-bottom: 1px solid black;
   background-color: white;
   z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
-header p {
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+.logo p{
   display: inline-block;
   margin-left: 10px;
 }
 
 nav{
-  text-align: right;
+  justify-content: space-around;
+  padding-right: 30px;
 }
 
 nav li{
   display: inline-block;
   text-align: center;
-  width: 60px;
+  padding-left: 20px;
 }
 
 nav a {
   color: black;
 }
 
+/*Main Content*/
 .container{
   position: relative;
   border: 1px solid black;
   display: flex;
   top: 90px;
+  justify-content: center;
 }
 
 .large{
@@ -52,8 +62,94 @@ nav a {
   margin: 20px;
 }
 
+#content{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#mother{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  background-image: url('../images/Main Story.png');
+  height: 300px;
+}
+#earth{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url('../images/Fall Season.png');
+}
+#research{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url('../images/Hipster Cameraman.png');
+}
+#cat{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url('../images/CAT CEO.png');
+}
+
+/*Third(small) section*/
 .small{
   width: 240px;
-  border: 1px solid black;
-  margin: 20px;
+}
+
+#news{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.bite{
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+
+/*footer*/
+footer{
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex-direction: column;
+}
+.footer p{
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+.footer a{
+  color: black;
+  width: 30px;
+  padding-right: 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-vertical-bar {
+  font-size: 20px;
+  font-weight: 600;
 }
